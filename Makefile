@@ -1,2 +1,2 @@
 all:
-	haml index.haml index.html
+	slimrb -p index.html.slim > index.html
