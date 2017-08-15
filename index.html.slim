@@ -2,10 +2,52 @@ doctype html
 html lang='ja'
   head
     meta charset='utf-8'
-    meta name='author' content='Yohei Susa'
-    title suemoc.com
+    meta name='viewport' content='width=device-width'
+    meta name='description' content='About suemoc'
+    meta name='twitter:title' content='SUEMOC.COM'
+    meta name='twitter:description' content='About suemoc'
+    meta name='twitter:card' content='summary'
+    meta name='twitter:image' content='https://avatars0.githubusercontent.com/u/2887750?v=4&s=460'
+    meta property='og:site_name' content='SUEMOC.COM'
+    meta property='og:description' content='About suemoc'
+    meta property='og:type' content='website'
+    meta property='og:image' content='https://avatars0.githubusercontent.com/u/2887750?v=4&s=460'
+    meta property='og:url' content='https://suemoc.com'
+    title SUEMOC.COM
+    style
+      | 
+        @import url('https://fonts.googleapis.com/css?family=Roboto:100,400');
+        body { font-family: Roboto, Helvetica, Arial, sans-serif; font-weight: 400; text-align: center; }
+        section { padding: 2em 0; }
+        .container { margin: auto; max-width: 960px; }
+        .header { font-size: 4rem; font-weight: 300; padding-bottom: 2em; padding-top: 2em; text-transform: uppercase; }
+        a { text-decoration: none; color: #199ad5; }
+        a:hover, a:active { color: #e2007a; }
+        .row { display: flex; }
+        .col { padding: 0 16px; }
+        .main p { margin: 1em 0; text-align: left; }
+        .footer { font-weight: 300; }
+        .footer h2 { text-transform: uppercase; font-weight: 300; }
+        .avatar { border-radius: 3px; width: 100%; }
   body
-    h1 suemoc.com
-    hr
-    a href='https://twitter.com/suemoc'
-      | twitter
+    header.header
+      .container
+        | suemoc
+    .main
+      section
+        .container
+          .row
+            .col
+              p
+                img.avatar src='https://avatars0.githubusercontent.com/u/2887750?v=4&s=460' alt='icon'
+            .col
+              p Yohei Susa (@suemoc)
+              p web programmer
+              p Ruby / Java / JavaScript
+              p Ruby on Rails / Spring / React
+      section.footer
+        .container
+          h2 Contact
+          a href='https://twitter.com/suemoc' target='_blank' Twitter
+          span &nbsp;
+          a href='https://github.com/suemoc' target='_blank' GitHub
